@@ -1,3 +1,3 @@
 # Codewars
 
-# Logs the codewars done daily with the proposed solutions 
+# Logs the codewar challenges done daily
