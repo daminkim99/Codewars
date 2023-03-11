@@ -10,7 +10,7 @@
     arrN= n.toString().split('')
     return Number(arrN.sort((a,b) => b-a).join(''))
   }
-  
+
 //8. Implement a function that determines whether a string that contains only letters is an isogram. 
   function isIsogram(str){
     str = str.toLowerCase()
@@ -21,6 +21,6 @@
       } else if(!compareStr.includes(str[i])){
         compareStr +=str[i]
       }
-    } console.log(compareStr)
+    }
     return compareStr == str? true:false
   }
