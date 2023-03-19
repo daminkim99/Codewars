@@ -12,7 +12,7 @@ Repository filled with daily codewars challenges solutions.
 Codewar challenges composed of 7kyus and 8kyus solved every day! 
 
 ## Optimizations
-*(optional)*
+
 
 I look at other peoples solutions to broaden the perspective of solving a same problem, and to optimize them. 
 
