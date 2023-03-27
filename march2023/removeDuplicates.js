@@ -18,5 +18,3 @@ function removeDuplicateWords (s) {
      }
     return sorted.join(' ')
   }
-
-  
