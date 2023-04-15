@@ -1,4 +1,4 @@
-/* 4.14.23
+/* 4.15.23
 
 Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below. Index 0 will be considered even.
 
