@@ -8,6 +8,8 @@ Given a string, detect whether or not it is a pangram. Return True if it is, Fal
 
 
 function isPangram(string){
+    //makes an array of alphabet array to compare 
   const alphabetArr= 'abcdefghijklmnopqrstuvwxyz'.split('')
+  //checks to see if every alphabet array exists in the alphabetarray
   return alphabetArr.every(x => string.toLowerCase().includes(x))           
 }
