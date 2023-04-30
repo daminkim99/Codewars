@@ -12,9 +12,10 @@ Note: no empty arrays will be given.
 
 function highestRank(arr) {
   let count = {};
-  let freqNum = 0;
+  let occurences = 0;
   let result = [];
-  //loop through each element in the array and increment each one if the element exists in the object
+  //loop through each element in the array and create an object that counts frequencies of the numbers 
+
   arr.forEach((x) => {
     if (count[x]) {
       count[x] += 1;
@@ -22,16 +23,19 @@ function highestRank(arr) {
       count[x] = 1;
     }
   });
+
   //loop through the count, replace the max value and the corresponding number
+
   for (let element in count) {
-    if (freqNum < count[element]) {
-      freqNum = count[element];
+    if (occurences < count[element]) {
+      occurences = count[element];
       result = [element];
-    } else if (freqNum === count[element]) {
-      freqNum = count[element];
+    } else if (occurences === count[element]) {
+      occurences = count[element];
       result.push(element);
     }
   }
   //if the result has one length then return that , if more than two numbers, then return the greatest
+
   return result.length === 1 ? +result[0] : +Math.max(...result);
 }
