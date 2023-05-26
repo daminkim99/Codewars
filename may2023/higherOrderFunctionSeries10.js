@@ -11,8 +11,6 @@ the birth year which for the purpose of this kata is calculated simply by subtra
 
 
 
-
-
 function addUsername(list) {
     //concatenation via template literals 
     list.forEach(x => x['username']= `${x.firstName.toLowerCase()}${x.lastName[0].toLowerCase()}${new Date().getFullYear()- x.age}`)
